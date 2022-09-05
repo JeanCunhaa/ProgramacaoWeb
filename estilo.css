@@ -25,6 +25,43 @@
     margin-left: 1em;
 }
 
+form{
+    border-radius: 2rem;
+    border: 1px solid;
+    right: 6%;
+    top: 6%;
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    margin-top: 0%;
+    padding-left: 5%;
+    padding-right: 0%;
+    margin-left: 10%;
+}
+.search{
+    width: 73%;
+    border-radius: 3rem;
+    border: 1px solid;
+    right: 2%;
+    left: 16.5%;
+    top: 6%;
+    position: absolute;
+    height: 90%;
+    padding-right: 0%;
+    margin-left: 10%;
+    border: transparent;
+}
+.lupa{
+    border-radius: 5rem;
+    right: 5%;
+    left: 1%;
+    top: 6%;
+    position: absolute;
+    height: 80%;
+    padding-right: 0%;
+    margin-left: 5%;
+}
+
 #login{
     margin-right: 2em;
     margin-top: 0px;
@@ -166,6 +203,10 @@
         box-sizing: border-box;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    form{
+        opacity: 0;
     }
 
 }
