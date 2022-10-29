@@ -16,10 +16,19 @@ function login(){
         if (req.readyState === 4 && req.status === 200) {
             const res = JSON.parse(req.responseText);
             console.log(res);
+            localStorage.setItem("res", token);
+            token();
         } else {
             console.log("Request error");
         }
         });
+    function token(){
+        if(localStorage.getItem('res') != null && localStorage.getItem('res') != undefined){
+            document.getElementById('cep').style.display = 'block';
+        }else{
+            document.getElementById('cep').style.display = 'none';
+        }
+    }
                 
     }
 }

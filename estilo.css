@@ -104,13 +104,18 @@ form{
 .entrar{
     align-items: center;
     display: flex;
-    margin-left: 80em;
+    margin-left: 65em;
 }
 #email{
     border-radius: 1em;
 }
 #password{
     border-radius: 1em;;
+}
+
+#cep{
+    display: none;
+    border-radius: 1em;
 }
 
 .lblEntrar{
