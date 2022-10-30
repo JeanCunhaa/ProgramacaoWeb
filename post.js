@@ -25,6 +25,7 @@ function login(){
     function token(){
         if(localStorage.getItem('res') != null && localStorage.getItem('res') != undefined){
             document.getElementById('cep').style.display = 'block';
+            document.getElementById('entrar').style.display = 'none';
         }else{
             document.getElementById('cep').style.display = 'none';
         }
@@ -37,4 +38,4 @@ function login(){
 
 
 
-//
+//"email": "eve.holt@reqres.in",     "password": "cityslicka"
