@@ -36,6 +36,8 @@ cepInput.addEventListener("keyup", (e) => {
         const res = await fetch(url);
         const data = await res.json();
         console.log(data);
+        let resultado = document.querySelector('#resultado');
+        resultado.innerHTML = `<p>Cidade: ${data.localidade} - ${data.uf} - R$20 de frete.</p>`
     }
 
 
