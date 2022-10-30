@@ -58,7 +58,14 @@
                 <label class="lblEntrar" for="password">Senha:</label>
                 <input name="password" id="password" type="password">
                 <!-- INPUT DO CEP -->
-                <input name="search" id="cep" type="text" placeholder="CEP">
+                <div class="CEP">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" maxlength="9" id="cep">
+                    <small>00000-000</small>
+                    <div id="resultado">
+                        
+                    </div>
+                </div>
                 <br><br>
                 <button  id="button" onclick="login()">Logar</button>
             </div> 
@@ -71,6 +78,7 @@
             </div>
         </div>
         <script src="post.js" type="text/javascript" charset="utf-8"></script>
+        <script src="cep.js"></script>
     </body>
 
 
