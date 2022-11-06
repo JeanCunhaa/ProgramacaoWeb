@@ -27,6 +27,7 @@ function login(){
         if (localStorage.getItem('token') != null && localStorage.getItem('token') != "undefined"){
             document.getElementById('login').style.display = 'none';
             document.getElementById('logado').style.display = 'block';
+            document.getElementById('errorLogin').style.display = 'none';
         }else{
             document.getElementById('login').style.display = 'block';
             document.getElementById('logado').style.display = 'none';
