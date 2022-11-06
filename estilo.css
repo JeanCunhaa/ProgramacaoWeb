@@ -156,6 +156,12 @@ form{
     padding-right: 10rem;
 }
 
+#errorLogin{
+    display: none;
+    color: red;
+    margin-left: 1em;
+}
+
 #logado{
     display: none;
     margin-right: 2em;

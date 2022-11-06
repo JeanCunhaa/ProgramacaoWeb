@@ -1,11 +1,10 @@
-
 function login(){ 
     const user = {
         email: document.getElementById('email').value,
         password: document.getElementById('password').value
     }
-    if (email.length < 3 || password.length < 3) {
-        alert("Email/Senha deve ter mais que 3 dígitos!")
+    if(password.value == '' || password.value == null || password.value.length <= 3 || email.value.length <= 3 || email.value == null || email.value == ''){
+        document.getElementById('errorLogin').style.display = 'block';
     } else {
         const req = new XMLHttpRequest();
         req.open('POST', 'https://reqres.in/api/login', true);
@@ -14,9 +13,9 @@ function login(){
         req.send(JSON.stringify(user));
         req.addEventListener('load', function() {
         if (req.readyState === 4 && req.status === 200) {
-            //const res = JSON.parse(req.responseText);
+            
             var token = (JSON.parse(this.responseText).token);
-            //console.log(res);
+            
             localStorage.setItem("token", token);
             autenticacao();
         } else {
@@ -33,7 +32,7 @@ function login(){
             document.getElementById('logado').style.display = 'none';
         }
     }
-    autenticacao();       
+    autenticacao();
     }
 }
     
