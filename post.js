@@ -14,23 +14,26 @@ function login(){
         req.send(JSON.stringify(user));
         req.addEventListener('load', function() {
         if (req.readyState === 4 && req.status === 200) {
-            const res = JSON.parse(req.responseText);
-            console.log(res);
-            localStorage.setItem("res", token);
-            token();
+            //const res = JSON.parse(req.responseText);
+            var token = (JSON.parse(this.responseText).token);
+            //console.log(res);
+            localStorage.setItem("token", token);
+            autenticacao();
         } else {
             console.log("Request error");
         }
         });
-    function token(){
-        if(localStorage.getItem('res') != null && localStorage.getItem('res') != undefined){
-            document.getElementById('cep').style.display = 'block';
-            document.getElementById('entrar').style.display = 'none';
+    
+    function autenticacao(){
+        if (localStorage.getItem('token') != null && localStorage.getItem('token') != "undefined"){
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('logado').style.display = 'block';
         }else{
-            document.getElementById('cep').style.display = 'none';
+            document.getElementById('login').style.display = 'block';
+            document.getElementById('logado').style.display = 'none';
         }
     }
-                
+    autenticacao();       
     }
 }
     
