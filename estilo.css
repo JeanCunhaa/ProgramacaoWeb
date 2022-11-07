@@ -162,6 +162,11 @@ form{
     margin-left: 1em;
 }
 
+#show{
+    display: none;
+    margin-left: 2em;
+}
+
 #logado{
     display: none;
     margin-right: 2em;

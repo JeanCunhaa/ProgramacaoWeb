@@ -1,4 +1,4 @@
-const cepInput = document.querySelector("#cep");
+/*const cepInput = document.querySelector("#cep");
 const addressForm = document.querySelector("#address-form");
 const addressInput = document.querySelector("#lougradouro");
 const cityInput = document.querySelector("#uf");

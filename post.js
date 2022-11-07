@@ -28,6 +28,7 @@ function login(){
             document.getElementById('login').style.display = 'none';
             document.getElementById('logado').style.display = 'block';
             document.getElementById('errorLogin').style.display = 'none';
+            document.getElementById('show').style.display = 'block';
         }else{
             document.getElementById('login').style.display = 'block';
             document.getElementById('logado').style.display = 'none';
