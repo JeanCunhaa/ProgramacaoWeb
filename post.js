@@ -23,22 +23,23 @@ function login(){
         }
         });
     
-    function autenticacao(){
-        if (localStorage.getItem('token') != null && localStorage.getItem('token') != "undefined"){
-            document.getElementById('login').style.display = 'none';
-            document.getElementById('logado').style.display = 'block';
-            document.getElementById('errorLogin').style.display = 'none';
-            document.getElementById('show').style.display = 'block';
-        }else{
-            document.getElementById('login').style.display = 'block';
-            document.getElementById('logado').style.display = 'none';
-        }
+    
+    
     }
-    autenticacao();
+}
+function autenticacao(){
+    if (localStorage.getItem('token') != null && localStorage.getItem('token') != "undefined"){
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('logado').style.display = 'block';
+        document.getElementById('errorLogin').style.display = 'none';
+        document.getElementById('show').style.display = 'block';
+    }else{
+        document.getElementById('login').style.display = 'block';
+        document.getElementById('logado').style.display = 'none';
     }
 }
     
-
+autenticacao();
 
 
 
