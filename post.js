@@ -33,6 +33,7 @@ function autenticacao(){
         document.getElementById('logado').style.display = 'block';
         document.getElementById('errorLogin').style.display = 'none';
         document.getElementById('show').style.display = 'block';
+        document.getElementById('entrar').style.display = 'none';
     }else{
         document.getElementById('login').style.display = 'block';
         document.getElementById('logado').style.display = 'none';
